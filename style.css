@@ -1,8 +1,22 @@
-body {
-    background-color: rgb(26, 20, 9);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    pading: 0;
+
 }
 
-h1 {
-    background-color: rgb(160, 136, 101);
+body {
+    background-image: linear-gradient(to right, #F1F1 );
+}
+
+h2 {
+    background-color: #1995AD;
     font-size: 1.5em;
+    text-align: center;
+}
+
+.nav {
+    background-color: #BCBABE;
 }
