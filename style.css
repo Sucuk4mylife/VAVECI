@@ -10,9 +10,6 @@
 body {
     background-image: linear-gradient(to right, #F1F1F2, #A1D6E2);
     height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
@@ -30,18 +27,13 @@ header {
     padding: 10px;
 }
 
-a {
-    color: #FFF;
-    text-decoration: none;
-
-}
 
 .logo {
     font-size: 30px;
     text-transform: uppercase;
 }
 
-ul {
+/*ul {
     width: 60%;
     list-style: none;
     display: flex;
@@ -72,9 +64,10 @@ ul a:hover {
     padding: 20px 0;
 
 
-}
+}*/
 
 .content button {
+    width: 500px;
     font-size: 30px;
     padding: 6px 10px;
     border-radius: 10px;
@@ -85,4 +78,52 @@ ul a:hover {
     background-color: transparent;
     border: 2px solid #fff;
 
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    background-color: #bcbabe;
+    width: 100vh;
+    height: 11vh;
+    border-radius: 50px;
+    box-shadow: black;
+
+}
+
+p {
+    font-size: 1.8em;
+    padding: 40px;
+
+
+}
+
+.p1 {
+
+    text-align: center;
+}
+
+
+
+h2 {
+
+    font-size: 2em;
+    width: 50vh;
+    height: 11vh;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: black;
+    padding-top: 40px;
+
+
+}
+
+
+video {
+    padding-left: 35vh;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1vh;
+    box-shadow: black;
 }
