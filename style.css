@@ -3,20 +3,86 @@
 * {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    pading: 0;
+    padding: 0;
 
 }
 
 body {
-    background-image: linear-gradient(to right, #F1F1 );
+    background-image: linear-gradient(to right, #F1F1F2, #A1D6E2);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h2 {
-    background-color: #1995AD;
-    font-size: 1.5em;
-    text-align: center;
+.container {
+    /*Noch nichts eingefallen*/
 }
 
-.nav {
-    background-color: #BCBABE;
+.container:hover {
+    /*Noch nichts eingefallen*/
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+ul {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a:hover {
+    border-bottom: 2px solid #fff;
+
+}
+
+.content {
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+    color: #fff;
+}
+
+.content h2 {
+    font-size: 80px;
+    text-transform: uppercase;
+
+}
+
+.content p {
+    initial-letter: 2px;
+    width: 420px;
+    padding: 20px 0;
+
+
+}
+
+.content button {
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.content button:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+
 }
