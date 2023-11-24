@@ -4,28 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DH-Campus</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <title>DH-Campus</title>
 </head>
 
 <body>
-    <div class="container"></div>
+
     <header>
-       <!--<a href="#" class="logo">DH-Campus</a>-->
-        </div>
-        <ul>
-            <li><a href="#top">Home</a></li>
-            <li><a href="räume.html">Räume</a></li>
-            <li><a href="#">Mieten</a></li>
-            <li><a href="personal.html">Personal</a></li>
-            <li><a href="#">Menü-Punkt-3</a></li>
-        </ul>
+        <div id="menu-toggle" onclick="toggleMenu">&#9776;</div>
+        <a id="logo" href="index.html" onclick="showHome()">
+            <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
+        </a>
     </header>
-    <div class="content">
-        <h2>DH-Campus</h2>
-        <button>Suchen</button>
+
+    <nav id="nav-menu">
+        <a href="home.html">Home</a>
+        <a href="räume.html" onclick="changeContent('Räume')">Räume</a>
+        <a href="standorte.html" onclick="changeContent('Stanadorte')">Standorte</a>
+        <a href="überuns.html" onclick="changeContent('Über uns')">Über uns</a>
+    </nav>
+
+    <section id="content">
+        <h2>Willkommen auf unserer Webseite!</h2>
+        <p>Wählen Sie einen Punkt aus der Navigation oder verwenden Sie die Suchmaschine.</p>
+    </section>
+
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Suche">
+        <button onclick="search()">Suchen</button>
     </div>
+    <footer>
+        &copy; 2023 VAVECI All Rights Reserved.
+    </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

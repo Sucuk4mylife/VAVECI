@@ -12,72 +12,16 @@ body {
     height: 10vh;
 }
 
-.container {
-    /*Noch nichts eingefallen*/
+header {}
+
+#logo img {
+    max-width: 100%;
+    height: 15vh;
+    width: auto;
 }
 
-.container:hover {
-    /*Noch nichts eingefallen*/
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-
-.logo {
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-/*ul {
-    width: 60%;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-ul a:hover {
-    border-bottom: 2px solid #fff;
-
-}
-
-.content {
-    width: 50%;
-    margin-top: 50px;
-    padding: 30px;
-    color: #fff;
-}
-
-.content h2 {
-    font-size: 80px;
-    text-transform: uppercase;
-
-}
-
-.content p {
-    initial-letter: 2px;
-    width: 420px;
-    padding: 20px 0;
-
-
-}*/
-
-.content button {
-    width: 500px;
-    font-size: 30px;
-    padding: 6px 10px;
-    border-radius: 10px;
-    border: none;
-}
-
-.content button:hover {
-    background-color: transparent;
-    border: 2px solid #fff;
-
+#menu-toggle {
+    padding-left: 20vh;
 }
 
 h1 {
@@ -99,10 +43,8 @@ p {
 }
 
 .p1 {
-
     text-align: center;
 }
-
 
 
 h2 {
@@ -115,9 +57,33 @@ h2 {
     box-shadow: black;
     padding-top: 40px;
 
-
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #BCBABE;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: #1995AD;
+}
+
+menu-toggle {
+    padding-left: ;
+}
 
 video {
     padding-left: 35vh;
@@ -126,4 +92,26 @@ video {
     height: auto;
     border-radius: 1vh;
     box-shadow: black;
+}
+
+#search {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#searchInput {
+    padding: 5px;
+    width: 70%;
+    max-width: 300px;
+}
+
+#search button {
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+#menu-toggle {
+    cursor: pointer;
+    width: 100vh;
 }
