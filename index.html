@@ -5,29 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="DH-CampusLogo_Nr2.png" type="image/png">
     <title>DH-Campus</title>
 </head>
 
 <body>
 
     <header>
-        <div id="menu-toggle" onclick="toggleMenu">&#9776;</div>
         <a id="logo" href="index.html" onclick="showHome()">
             <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
+            <h1>DH-Campus</h1>
         </a>
     </header>
 
     <nav id="nav-menu">
         <a href="home.html">Home</a>
         <a href="räume.html" onclick="changeContent('Räume')">Räume</a>
-        <a href="standorte.html" onclick="changeContent('Stanadorte')">Standorte</a>
+        <a href="standorte.html" onclick="changeContent('Standorte')">Standorte</a>
         <a href="überuns.html" onclick="changeContent('Über uns')">Über uns</a>
     </nav>
-
-    <section id="content">
-        <h2>Willkommen auf unserer Webseite!</h2>
-        <p>Wählen Sie einen Punkt aus der Navigation oder verwenden Sie die Suchmaschine.</p>
-    </section>
 
     <div class="search">
         <input type="text" id="searchInput" placeholder="Suche">
