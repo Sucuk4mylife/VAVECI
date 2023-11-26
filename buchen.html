@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="DH-CampusLogo_Nr2.png" type="image/png">
+    <title>DH-Campus</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
+                <h1>DH-Campus</h1>
+            </a>
+            <ul>
+                <li><a href="räume.html">Räume</a></li>
+                <li><a href="hilfe.html">Kundenservice</a></li>
+                <li><a href="überuns.html">Über uns</a></li>
+            </ul>
+            <button class="btn" onclick="window.location.href='buchen.html'">
+                Jetzt Buchen&nbsp;&nbsp;<i class="fa-solid fa-location-dot"></i>
+            </button>
+        </nav>
+        <div class="content">
+            <div id="bookingForm">
+                <h2>Buchen Sie einen Raum</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="room">Raum:</label>
+                    <select id="room" name="room" required>
+                        <option value="medizin">Medizinischer Raum</option>
+                        <option value="pc">PC Raum</option>
+                        <option value="küche">Küche</option>
+                        <option value="klasse">Klassen Raum</option>
+                    </select>
+
+                    <label for="date">Datum:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Zeit:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="button" onclick="submitBooking()">Buchen</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            &copy; 2023 VAVECI All Rights Reserved.
+        </footer>
+        <script src="main.js"></script>
+
+</html>

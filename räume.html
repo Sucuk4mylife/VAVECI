@@ -5,28 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Räume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="DH-CampusLogo_Nr2.png" type="image/png">
+    <title>DH-Campus</title>
 </head>
 
 <body>
-    <header>
-        <a id="logo" href="index.html" onclick="showHome()">
-            <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
-        </a>
-    </header>
-    <h1>Unser Medizinraum</h1>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
+                <h1>DH-Campus</h1>
+            </a>
+            <ul>
+                <li><a href="räume.html">Räume</a></li>
+                <li><a href="hilfe.html">Kundenservice</a></li>
+                <li><a href="überuns.html">Über uns</a></li>
+            </ul>
+            <button class="btn" onclick="window.location.href='buchen.html'">
+                Jetzt Buchen&nbsp;&nbsp;<i class="fa-solid fa-location-dot"></i>
+            </button>
+        </nav>
+        <h1>Unser Medizinraum</h1>
 
-    <p class="p1">Entdecken Sie eine innovative Gesundheitsversorgung in unserem modern ausgestatteten Medizinraum.
-        Mit flexiblen Raumoptionen, Patientenkomfort und zentraler Lage bieten wir die ideale Umgebung für Ihren
-        Praxiserfolg.
-        Treten Sie einer Gemeinschaft bei, die Wandel vorantreibt, und sichern Sie sich Ihren Raum für medizinische
-        Innovationen.
-        Kontaktieren Sie uns noch heute und gestalten Sie die Zukunft Ihrer Praxis!</p>
+        <p class="p1">Entdecken Sie eine innovative Gesundheitsversorgung in unserem modern ausgestatteten Medizinraum.
+            Mit flexiblen Raumoptionen, Patientenkomfort und zentraler Lage bieten wir die ideale Umgebung für Ihren
+            Praxiserfolg.
+            Treten Sie einer Gemeinschaft bei, die Wandel vorantreibt, und sichern Sie sich Ihren Raum für medizinische
+            Innovationen.
+            Kontaktieren Sie uns noch heute und gestalten Sie die Zukunft Ihrer Praxis!</p>
 
 
-    <video controls>
-        <source src="Medizin.mp4" type="video/mp4">
-    </video>
+        <video controls>
+            <source src="Medizin.mp4" type="video/mp4">
+        </video>
 </body>
 
 </html>

@@ -4,16 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanessa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="DH-CampusLogo_Nr2.png" type="image/png">
+    <title>DH-Campus</title>
 </head>
 
 <body>
-    <header>
-        <a id="logo" href="index.html" onclick="showHome()">
-            <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
-        </a>
-    </header>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
+                <h1>DH-Campus</h1>
+            </a>
+            <ul>
+                <li><a href="räume.html">Räume</a></li>
+                <li><a href="hilfe.html">Kundenservice</a></li>
+                <li><a href="überuns.html">Über uns</a></li>
+            </ul>
+            <button class="btn" onclick="window.location.href='buchen.html'">
+                Jetzt Buchen&nbsp;&nbsp;<i class="fa-solid fa-location-dot"></i>
+            </button>
+        </nav>
     <h1>Vanessa: Kreativität in Aktion</h1>
     <p>Vanessa bringt ihre einzigartige kreative Perspektive in unser Team ein.
         Mit einem Hintergrund in Grafikdesign und einer Leidenschaft für Innovation verleiht sie unseren Projekten eine
