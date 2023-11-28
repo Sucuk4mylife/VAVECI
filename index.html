@@ -5,43 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!--Verlinkung zu CSS, damit wir unsere Hauptseite optisch gestalten können.-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Verlinkung auf eine öffentliche Seite, welches HTML Symbole zur Verfügung stellen (z.B. Lupe bei Suche oder bei jetzt Buchen diesen Standortzeichen).-->
     <link rel="icon" href="DH-CampusLogo_Nr2.png" type="image/png">
+    <!--Unser Logo in unserem Tab oben. Die Reihenfolge ist hier wichtig, um zu bestimmen, ob das Logo links oder rechts sein soll im Tab (links=Anfang, rechts=Ende).-->
     <title>DH-Campus</title>
+    <!--Unser Titel im Tab.-->
+
 </head>
 
 <body>
     <div class="container">
         <nav>
             <a href="index.html" class="logo">
-                <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
+                <img src="DH-CampusLogo_Nr2.png" alt="Logo">
                 <h1>DH-Campus</h1>
+                <!--Wenn man das Logo anklickt, wird man auf die Hauptseite geleitet, wenn man auf einer anderen Seite ist.-->
             </a>
             <ul>
                 <li><a href="räume.html">Räume</a></li>
                 <li><a href="hilfe.html">Kundenservice</a></li>
                 <li><a href="überuns.html">Über uns</a></li>
             </ul>
+            <!--Unsere Auswahlliste, die wir im Banner haben. Wenn man die anklickt, wird man durch den Link auf eine andere Seite geleitet. -->
             <button class="btn" onclick="window.location.href='buchen.html'">
+                <!--Unser Button für das Buchen eines Raumes. Wenn man es anklickt, wird man durch den Link auf die Buch Seite geleitet.-->
                 Jetzt Buchen&nbsp;&nbsp;<i class="fa-solid fa-location-dot"></i>
+                <!--So heißt unser Button und ist halt wie voher erwähnt eine Verlinkung.-->
             </button>
+
         </nav>
         <div class="content">
             <h1>Entdecke Die Besten Räume</h1>
             <p>Entdecken Sie am DH-Campus die besten Räume für ihre Bedürfnisse, wo inspirierende Umgebungen
                 auf innovative Ideen treffen</p>
+            <!--Unser Text auf unserer Startseite.-->
             <form action="#">
+                <!--ein Formulla, welches man anklicken kann und7oder ausfüllen kann.-->
                 <input type="text" placeholder="Suche">
+                <!--Ermöglicht dort als "Text" was reinzuschreiben.-->
                 <button type="submit" class="btn">
                     Suchen&nbsp;&nbsp;<i class="fa fa-search"></i>
                 </button>
+                <!--Unser Suchen Button.-->
             </form>
         </div>
     </div>
     <footer>
         &copy; 2023 VAVECI All Rights Reserved.
+        <!--CopyRight banner unten auf der Seite.-->
     </footer>
+    <!--Steht für die Fußzeile, also die untere Ausrichtung der Seite, welches man durch diese Definition im CSS besser anpassen kann.-->
     <script src="main.js"></script>
+    <!--JS macht die Seite Funktionstuchtig. Dies steht am Ende von HTML, weil die ganze HTML Seite geladen werden soll und dann erst nachdem die Seite geladen ist, erst ihre Funktion beim anklicken erfüllt.-->
+
 </body>
 
 </html>

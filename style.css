@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-* {
+/*Importlink von einer Website, welches verschiedene Schriftarten zuverfügung stellt.*/
+*
+
+/*Allgemeine Einstellungen über die gesamte Website.*/
+    {
     font-family: 'Ubuntu', sans-serif;
+    /*Schriftartpaket, damit wähle ich "Ubuntu" aus und "sans-serif" (Basic Schriftarten), wenn die Schriftart "Ubuntu" aus irgendeinem Grund nicht vorhanden sein kann, wird eine Basic Schriftart verwendet.*/
     margin: 0;
+    /*vertikale Abstände gesamter Elemente.*/
     padding: 0;
+    /*horizontale Abstände gesamter Elemente.*/
     box-sizing: border-box;
+    /*Grenzen der Elemte, also das jedes Element ein Kasten rum herum haben und damit kann man die Abstände besser Einstellen.*/
 }
 
 .container {

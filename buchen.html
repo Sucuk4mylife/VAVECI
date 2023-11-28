@@ -14,7 +14,7 @@
     <div class="container">
         <nav>
             <a href="index.html" class="logo">
-                <img src="DH-CampusLogo_Nr2.png" alt="Mein Logo">
+                <img src="DH-CampusLogo_Nr2.png" alt="Logo">
                 <h1>DH-Campus</h1>
             </a>
             <ul>
@@ -26,22 +26,29 @@
                 Jetzt Buchen&nbsp;&nbsp;<i class="fa-solid fa-location-dot"></i>
             </button>
         </nav>
+        <!--Dieser Teil ist auf jeder Seite gleich.-->
         <div class="content">
             <div id="bookingForm">
                 <h2>Buchen Sie einen Raum</h2>
                 <form>
+                    <!--Formulla, wo man was eintippen kann.-->
                     <label for="name">Name:</label>
+                    <!--Label = sowas wie Markierung oder Überschrift.-->
                     <input type="text" id="name" name="name" required>
+                    <!--Input = man kann als Text was reinschreiben und muss ausgefühlt werden, weil es ein Pflichtfeld ist.-->
 
                     <label for="email">E-Mail:</label>
                     <input type="email" id="email" name="email" required>
+                    <!--"required" = alle Felder Pflicht, also da muss was angegeben werden.-->
 
                     <label for="room">Raum:</label>
                     <select id="room" name="room" required>
+                        <!--Einklappbare Leiste, wo man was auswählen kann.-->
                         <option value="medizin">Medizinischer Raum</option>
                         <option value="pc">PC Raum</option>
                         <option value="küche">Küche</option>
                         <option value="klasse">Klassen Raum</option>
+                        <!--Optionen die man anklicken kann.-->
                     </select>
 
                     <label for="date">Datum:</label>
@@ -49,9 +56,12 @@
 
                     <label for="time">Zeit:</label>
                     <input type="time" id="time" name="time" required>
-
                     <button type="button" onclick="submitBooking()">Buchen</button>
+                    <!--Button zum anklicken erstellt, welches durch JS eine Funktion erhält. Durch das anklicken wir diese Funktion ausgelöst.-->
                 </form>
+                <div id="roomPreview"><!--Noch nicht fertig-->
+
+                </div>
             </div>
         </div>
         <footer>
