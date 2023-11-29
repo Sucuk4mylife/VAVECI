@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html><!--Dokumentyp angeben, damit der Browser versteht, dass wir mit HTML arbeiten.-->
+<html lang="de"><!--"html" ist eine Codierung, lang-Attribut für Spracheinstellungen und "de" steht für Deutsch.-->
 
-<head>
-    <meta charset="UTF-8">
+<head><!--Einstellungen (z.B Bildschirmgröße) der Website, wird nicht auf dieser angezeigt.-->
+    <meta charset="UTF-8"><!--"UTF"(Unicode Transformation Format) ist eine Zeichencodierung für HTML, welche entscheidet, wie ein Zeichen in Bits und Bytes abgebildet wird und die 8 steht für 8 Bits.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--"content" gibt die Informationen zum Inhalt der Seite an. 
+        "name" legt den Namen fest, der vom auswertenden Programm verwendet wird.-->
     <link rel="stylesheet" href="style.css">
     <!--Verlinkung zu CSS, damit wir unsere Hauptseite optisch gestalten können.-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!--Verlinkung auf eine öffentliche Seite, welches HTML Symbole zur Verfügung stellen (z.B. Lupe bei Suche oder bei jetzt Buchen diesen Standortzeichen).-->
+    <!--Verlinkung auf eine öffentliche Seite, welches HTML Symbole zur Verfügung stellen (z.B. Lupe bei Suche oder bei "jetzt Buchen" dieses Standortzeichen).-->
     <link rel="icon" href="DH-CampusLogo_Nr2.png" type="image/png">
-    <!--Unser Logo in unserem Tab oben. Die Reihenfolge ist hier wichtig, um zu bestimmen, ob das Logo links oder rechts sein soll im Tab (links=Anfang, rechts=Ende).-->
+    <!--Unser Logo in unserem Tab oben. Die Reihenfolge ist hier wichtig, um zu bestimmen, ob das Logo links oder rechts sein soll im Tab (Links=Anfang, Rechts=Ende).-->
     <title>DH-Campus</title>
     <!--Unser Titel im Tab.-->
 
 </head>
 
-<body>
-    <div class="container">
-        <nav>
+<body><!--Inhalt der Website.-->
+    <div class="container"><!--"class" ist wie ein Bauplan. Einer Klasse können Eigenschaften zugeordnet werden, die bei jedem Objekt dieser Klasse identisch sein sollen.-->
+        <nav><!--Ein Abschnitt mit Navigationslinks: stellt einen Abschnitt einer Seite dar, der auf andere Seiten oder Teile innerhalb einer Seite verweist.-->
             <a href="index.html" class="logo">
                 <img src="DH-CampusLogo_Nr2.png" alt="Logo">
+                <!--"img" für image und dann Bildadresse vom Bild kopieren (Link).-->
                 <h1>DH-Campus</h1>
                 <!--Wenn man das Logo anklickt, wird man auf die Hauptseite geleitet, wenn man auf einer anderen Seite ist.-->
             </a>
@@ -27,12 +30,14 @@
                 <li><a href="räume.html">Räume</a></li>
                 <li><a href="hilfe.html">Kundenservice</a></li>
                 <li><a href="überuns.html">Über uns</a></li>
+                <!--Ungeordnete Liste (ein Symbol wie: Strich, Punkt, Pfeil) erstellen durch "ul" und "li" steht für Liste.
+                Mit "a href" verlinkt/verweist man auf eine HTML Seite.-->
             </ul>
             <!--Unsere Auswahlliste, die wir im Banner haben. Wenn man die anklickt, wird man durch den Link auf eine andere Seite geleitet. -->
             <button class="btn" onclick="window.location.href='buchen.html'">
                 <!--Unser Button für das Buchen eines Raumes. Wenn man es anklickt, wird man durch den Link auf die Buch Seite geleitet.-->
                 Jetzt Buchen&nbsp;&nbsp;<i class="fa-solid fa-location-dot"></i>
-                <!--So heißt unser Button und ist halt wie voher erwähnt eine Verlinkung.-->
+                <!--So heißt unser Button und ist wie voher erwähnt eine Verlinkung.-->
             </button>
 
         </nav>
@@ -41,8 +46,9 @@
             <p>Entdecken Sie am DH-Campus die besten Räume für ihre Bedürfnisse, wo inspirierende Umgebungen
                 auf innovative Ideen treffen</p>
             <!--Unser Text auf unserer Startseite.-->
+            <!--"p" steht für paragraph, also übersetzte Absatz.-->
             <form action="#">
-                <!--ein Formulla, welches man anklicken kann und7oder ausfüllen kann.-->
+                <!--Ein Formula, welches man anklicken kann und/oder ausfüllt.-->
                 <input type="text" placeholder="Suche">
                 <!--Ermöglicht dort als "Text" was reinzuschreiben.-->
                 <button type="submit" class="btn">
@@ -54,11 +60,12 @@
     </div>
     <footer>
         &copy; 2023 VAVECI All Rights Reserved.
-        <!--CopyRight banner unten auf der Seite.-->
+        <!--CopyRight Banner unten auf der Seite.-->
     </footer>
-    <!--Steht für die Fußzeile, also die untere Ausrichtung der Seite, welches man durch diese Definition im CSS besser anpassen kann.-->
+    <!--Steht für die Fußzeile, also die untere Ausrichtung der Seite, welche man durch diese Definition im CSS besser anpassen kann.-->
     <script src="main.js"></script>
-    <!--JS macht die Seite Funktionstuchtig. Dies steht am Ende von HTML, weil die ganze HTML Seite geladen werden soll und dann erst nachdem die Seite geladen ist, erst ihre Funktion beim anklicken erfüllt.-->
+    <!--JS macht die Seite funktionstuchtig. Dies steht am Ende von HTML, weil die ganze HTML Seite geladen werden soll und dann erst nachdem 
+        die Seite geladen ist, erst ihre Funktion beim anklicken erfüllt.-->
 
 </body>
 

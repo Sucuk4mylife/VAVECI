@@ -16,6 +16,7 @@
             <a href="index.html" class="logo">
                 <img src="DH-CampusLogo_Nr2.png" alt="Logo">
                 <h1>DH-Campus</h1>
+                <!--Wenn man das Logo anklickt, dann wird man auf die Hauptseite geleitet.-->
             </a>
             <ul>
                 <li><a href="räume.html">Räume</a></li>
@@ -28,7 +29,7 @@
         </nav>
         <!--Dieser Teil ist auf jeder Seite gleich.-->
         <div class="content">
-            <div id="bookingForm">
+            <div id="formular">
                 <h2>Buchen Sie einen Raum</h2>
                 <form>
                     <!--Formulla, wo man was eintippen kann.-->
@@ -55,11 +56,18 @@
                     <input type="date" id="date" name="date" required>
 
                     <label for="time">Zeit:</label>
-                    <input type="time" id="time" name="time" required>
+                    <div class="time-inputs">
+                        <span>Von:</span>
+                        <input type="time" id="von" name="von" required>
+                        <span>Bis:</span>
+                        <input type="time" id="bis" name="bis" required>
+                    </div>
+
+
                     <button type="button" onclick="submitBooking()">Buchen</button>
                     <!--Button zum anklicken erstellt, welches durch JS eine Funktion erhält. Durch das anklicken wir diese Funktion ausgelöst.-->
                 </form>
-                <div id="roomPreview"><!--Noch nicht fertig-->
+                <div id="raumvorschau"><!--Noch nicht fertig-->
 
                 </div>
             </div>

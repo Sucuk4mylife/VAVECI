@@ -1,33 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
-/*Importlink von einer Website, welches verschiedene Schriftarten zuverfügung stellt.*/
+/*Importlink von einer Website, welcher verschiedene Schriftarten zur Verfügung stellt.*/
 *
 
 /*Allgemeine Einstellungen über die gesamte Website.*/
     {
     font-family: 'Ubuntu', sans-serif;
-    /*Schriftartpaket, damit wähle ich "Ubuntu" aus und "sans-serif" (Basic Schriftarten), wenn die Schriftart "Ubuntu" aus irgendeinem Grund nicht vorhanden sein kann, wird eine Basic Schriftart verwendet.*/
+    /*Schriftartpaket, damit wähle ich "Ubuntu" aus und "sans-serif" (Basic Schriftarten).Wenn die Schriftart "Ubuntu" aus irgendeinem Grund nicht vorhanden sein kann, wird eine Basic Schriftart verwendet.*/
     margin: 0;
-    /*vertikale Abstände gesamter Elemente.*/
+    /*Vertikale Abstände gesamter Elemente.*/
     padding: 0;
-    /*horizontale Abstände gesamter Elemente.*/
+    /*Horizontale Abstände gesamter Elemente.*/
     box-sizing: border-box;
-    /*Grenzen der Elemte, also das jedes Element ein Kasten rum herum haben und damit kann man die Abstände besser Einstellen.*/
+    /*Grenzen der Elemte, also das jedes Element ein Kasten drum herum haben und damit kann man die Abstände besser einstellen.*/
 }
 
 .container {
     background-image: linear-gradient(to right, #F1F1F2, #A1D6E2);
+    /*Hintergrundbild*/
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    /*Stellt alle direkten Nachkommen eines Element in Zeilen oder Spalten dar.*/
+    flex-direction: column;/*Reihenfolge der Elemente (oben nach unten).*/
+    width: 100%;/*Bildschirmgröße*/
     min-height: 100vh;
-    padding: 10px 8px;
+    padding: 10px 8px;/*Innenabstand eines Elements zu seinem Rahmen.*/
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     background-color: #BCBABE;
+    /*body (also auch Überschriften) steht für den Inhalt der Website und deswegen soll dieser komplett gefärbt werden ("background-color").
+    "#BCBABE"ist eine HEX Zahl einer bestimmten Farbe aus Color Picker.*/
     padding: 10px 40px;
     border-radius: 20px;
     align-items: center;
@@ -43,7 +47,7 @@ nav a {
 }
 
 nav a h1 {
-    font-size: 1.2em;
+    font-size: 1.2em;/*Schriftgröße*/
     max-width: fit-content;
     padding-left: 10vh;
     white-space: nowrap;
@@ -53,6 +57,7 @@ nav a h1 {
 .logo {
     display: flex;
     align-items: center;
+    /*Position des Logos.*/
     gap: 10px;
     font-size: 30px;
     text-decoration: none;
@@ -91,11 +96,11 @@ nav ul li a:hover {
     padding: 15px 25px;
     width: 300px;
     gap: 5px;
-    border: none;
+    border: none;/*Bestimmt alle Rahmenbreiten eines Elements.*/
     border-radius: 5px;
     background-color: #1995AD;
     color: #fff;
-    font-weight: 500;
+    font-weight: 500;/*Regelt die Strichstärke (dick oder dünn)*/
     cursor: pointer;
     transition: 0.4s ease;
 }
@@ -173,7 +178,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-#bookingForm {
+#formular {
     margin: 20px;
     padding: 20px;
     background-color: white;
@@ -181,23 +186,23 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#bookingForm h2 {
+#formular h2 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
 }
 
-#bookingForm form {
+#formular form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#bookingForm label {
+#formular label {
     margin-bottom: 10px;
 }
 
-#bookingForm input, #bookingForm select {
+#formular input, #formular select {
     padding: 10px;
     margin-bottom: 20px;
     width: 100%;
@@ -206,7 +211,19 @@ nav ul li a:hover {
     box-sizing: border-box;
 }
 
-#bookingForm button {
+#formular .time-inputs {
+    display: flex;
+    align-items: center;
+}
+
+#formular .time-inputs input {
+    margin-right: 10px;
+}
+
+#formular .time-inputs span {
+    
+}
+#formular button {
     font-size: large;
     padding: 10px 20px;
     cursor: pointer;
@@ -217,13 +234,14 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-#bookingForm button:hover {
+#formular button:hover {
     background-color: #1995AD;
 }
 
 video {
     margin: 20px auto;
     width: 70%;
+    /*Bildschirmgröße des Videos*/
     max-width: 100%;
     height: auto;
     border-radius: 1vh;
