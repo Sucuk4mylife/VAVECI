@@ -20,10 +20,13 @@
     /*Hintergrundbild*/
     display: flex;
     /*Stellt alle direkten Nachkommen eines Element in Zeilen oder Spalten dar.*/
-    flex-direction: column;/*Reihenfolge der Elemente (oben nach unten).*/
-    width: 100%;/*Bildschirmgröße*/
+    flex-direction: column;
+    /*Reihenfolge der Elemente (oben nach unten).*/
+    width: 100%;
+    /*Bildschirmgröße*/
     min-height: 100vh;
-    padding: 10px 8px;/*Innenabstand eines Elements zu seinem Rahmen.*/
+    padding: 10px 8px;
+    /*Innenabstand eines Elements zu seinem Rahmen.*/
 }
 
 nav {
@@ -47,7 +50,8 @@ nav a {
 }
 
 nav a h1 {
-    font-size: 1.2em;/*Schriftgröße*/
+    font-size: 1.2em;
+    /*Schriftgröße*/
     max-width: fit-content;
     padding-left: 10vh;
     white-space: nowrap;
@@ -96,11 +100,13 @@ nav ul li a:hover {
     padding: 15px 25px;
     width: 300px;
     gap: 5px;
-    border: none;/*Bestimmt alle Rahmenbreiten eines Elements.*/
+    border: none;
+    /*Bestimmt alle Rahmenbreiten eines Elements.*/
     border-radius: 5px;
     background-color: #1995AD;
     color: #fff;
-    font-weight: 500;/*Regelt die Strichstärke (dick oder dünn)*/
+    font-weight: 500;
+    /*Regelt die Strichstärke (dick oder dünn)*/
     cursor: pointer;
     transition: 0.4s ease;
 }
@@ -154,29 +160,55 @@ nav ul li a:hover {
 }
 
 .profile-list {
+    margin-top: 5%;
     list-style: none;
     display: flex;
-    justify-content: space-around;
     padding: 20px;
+    justify-content: center;
 }
 
 .profile-list li {
     text-align: center;
+    position: relative;
+    margin: -2.5% 2.5%;
+    background-color: #1995AD;
+    border-radius: 5%;
 }
 
 .profile-image {
     overflow: hidden;
-    border-radius: 10px;
-    width: 100px;
-    height: 100px;
+    border-radius: 5%;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #1995AD;
 }
 
 .profile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5%;
 }
+
+.person-info {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 1em;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    background-color: #BCBABE;
+    height: 55vh;
+    margin: auto;
+}
+
 
 #formular {
     margin: 20px;
@@ -220,9 +252,8 @@ nav ul li a:hover {
     margin-right: 10px;
 }
 
-#formular .time-inputs span {
-    
-}
+#formular .time-inputs span {}
+
 #formular button {
     font-size: large;
     padding: 10px 20px;
