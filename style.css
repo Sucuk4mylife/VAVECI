@@ -29,6 +29,13 @@
     /*Innenabstand eines Elements zu seinem Rahmen.*/
 }
 
+#vh1 {
+    background-color: #1995AD;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 3vh;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -121,7 +128,7 @@ nav ul li a:hover {
     margin-top: 5%;
     color: black;
     max-width: 700px;
-    padding-left: 4%;
+    margin-left: 33%;
 }
 
 .content h1 {
@@ -159,20 +166,39 @@ nav ul li a:hover {
     max-width: 150px;
 }
 
+.profile-roles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    /* Abstand zwischen den beiden Überschriften */
+}
+
+.profile-role {
+    text-align: center;
+    background-color: #1995AD;
+    /* Hintergrundfarbe für den Bereich */
+    border-radius: 10px;
+    /* Runde Ecken */
+    padding: 10px;
+    /* Innenabstand für den Bereich */
+}
+
+.profile-role h2 {
+    font-size: 1em;
+
+}
+
 .profile-list {
-    margin-top: 5%;
     list-style: none;
     display: flex;
-    padding: 20px;
     justify-content: center;
 }
 
 .profile-list li {
     text-align: center;
     position: relative;
-    margin: -2.5% 2.5%;
-    background-color: #1995AD;
-    border-radius: 5%;
+    margin: 1vh;
+    /* Abstand über den Namen */
 }
 
 .profile-image {
@@ -207,6 +233,12 @@ nav ul li a:hover {
     background-color: #BCBABE;
     height: 55vh;
     margin: auto;
+}
+
+.person-info p {
+    padding-top: 6%;
+    text-decoration: none;
+    font-size: larger;
 }
 
 
@@ -251,8 +283,6 @@ nav ul li a:hover {
 #formular .time-inputs input {
     margin-right: 10px;
 }
-
-#formular .time-inputs span {}
 
 #formular button {
     font-size: large;
