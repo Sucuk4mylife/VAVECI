@@ -31,18 +31,32 @@
             <h1>Kundenservice</h1>
             <p>Willkommen beim DH-Campus Kundenservice. Wie können wir Ihnen helfen?</p>
 
-            <button class="btn-open-chat" onclick="openChat()">Chat starten</button>
-            <div class="chat-container" id="chat-container">
+           
+            <div class="chat-container">
                 <div class="chat-box">
-                    <div class="chat-message chat-bot">
-                        <p>Willkommen! Beschreiben Sie bitte Ihr Problem genauer, ein Mitarbeiter wird Ihnen bald
-                            helfen.</p>
-                    </div>
+                    
                 </div>
                 <div class="input-container">
                     <input type="text" placeholder="Type your message...">
                     <button class="btn-send"><i class="fas fa-paper-plane"></i></button>
                 </div>
+            </div>
+
+            
+            <form class="feedback-form">
+                <label for="feedback">Ihre Meinung ist uns wichtig. Bitte teilen Sie uns Ihr Feedback mit:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Ihr Feedback..."></textarea>
+                <button class="btn" type="submit">Feedback senden</button>
+            </form>
+
+            
+            <div class="quick-help">
+                <h2>Schnelle Hilfe</h2>
+                <ul>
+                    <li>FAQs</li>
+                    <li>Live-Chat</li>
+                    <li>Kontaktieren Sie uns</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -50,12 +64,6 @@
     <footer>
         <p>&copy; 2023 DH-Campus. Alle Rechte vorbehalten.</p>
     </footer>
-
-    <script>
-        function openChat() {
-            document.getElementById("chat-container").style.display = "block";
-        }
-    </script>
 </body>
 
 </html>
