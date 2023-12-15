@@ -242,14 +242,13 @@ nav ul li a:hover {
 }
 
 
-#formular {    
-    margin: 20px;
+#formular {
+    margin: 5vh;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-left: 85%;
-    margin-right: -80%;
+    box-shadow: 10px rgba(0, 0, 0, 0.2);
+    width: fit-content;
 }
 
 #formular h2 {
@@ -311,14 +310,14 @@ video {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-footer {
+/*footer {
     font-size: small;
     background-color: #1995AD;
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-}
+} !probleme!*/
 
 .chat-container {
     display: flex;

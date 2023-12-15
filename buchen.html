@@ -28,52 +28,50 @@
             </button>
         </nav>
         <!--Dieser Teil ist auf jeder Seite gleich.-->
-        <div class="content">
-            <div id="formular">
-                <h2>Buchen Sie einen Raum</h2>
-                <form>
-                    <!--Formulla, wo man was eintippen kann.-->
-                    <label for="name">Name:</label>
-                    <!--Label = sowas wie Markierung oder Überschrift.-->
-                    <input type="text" id="name" name="name" required>
-                    <!--Input = man kann als Text was reinschreiben und muss ausgefühlt werden, weil es ein Pflichtfeld ist.-->
+        <div id="formular">
+            <h2>Buchen Sie einen Raum</h2>
+            <form>
+                <!--Formulla, wo man was eintippen kann.-->
+                <label for="name">Name:</label>
+                <!--Label = sowas wie Markierung oder Überschrift.-->
+                <input type="text" id="name" name="name" required>
+                <!--Input = man kann als Text was reinschreiben und muss ausgefühlt werden, weil es ein Pflichtfeld ist.-->
 
-                    <label for="email">E-Mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    <!--"required" = alle Felder Pflicht, also da muss was angegeben werden.-->
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <!--"required" = alle Felder Pflicht, also da muss was angegeben werden.-->
 
-                    <label for="room">Raum:</label>
-                    <select id="room" name="room" required>
-                        <!--Einklappbare Leiste, wo man was auswählen kann.-->
-                        <option value="medizin">Medizinischer Raum</option>
-                        <option value="pc">PC Raum</option>
-                        <option value="küche">Küche</option>
-                        <option value="klasse">Klassen Raum</option>
-                        <!--Optionen die man anklicken kann.-->
-                    </select>
+                <label for="room">Raum:</label>
+                <select id="room" name="room" required>
+                    <!--Einklappbare Leiste, wo man was auswählen kann.-->
+                    <option value="medizin">Medizinischer Raum</option>
+                    <option value="pc">PC Raum</option>
+                    <option value="küche">Küche</option>
+                    <option value="klasse">Klassen Raum</option>
+                    <!--Optionen die man anklicken kann.-->
+                </select>
 
-                    <label for="date">Datum:</label>
-                    <input type="date" id="date" name="date" required>
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
 
-                    <label for="time">Zeit:</label>
-                    <div class="time-inputs">
-                        <span>Von:</span>
-                        <input type="time" id="von" name="von" required>
-                        <span>Bis:</span>
-                        <input type="time" id="bis" name="bis" required>
-                    </div>
-
-
-                    <button type="button" onclick="submitBooking()">Buchen</button>
-                    <!--Button zum anklicken erstellt, welches durch JS eine Funktion erhält. Durch das anklicken wir diese Funktion ausgelöst.-->
-                </form>
-                <div id="raumvorschau"><!--Noch nicht fertig-->
-
+                <label for="time">Zeit:</label>
+                <div class="time-inputs">
+                    <span>Von:</span>
+                    <input type="time" id="von" name="von" required>
+                    <span>Bis:</span>
+                    <input type="time" id="bis" name="bis" required>
                 </div>
+
+
+                <button type="button" onclick="submitBooking()">Buchen</button>
+                <!--Button zum anklicken erstellt, welches durch JS eine Funktion erhält. Durch das anklicken wir diese Funktion ausgelöst.-->
+            </form>
+            <div id="raumvorschau"><!--Noch nicht fertig-->
+
             </div>
         </div>
         <footer>
-            &copy; 2023 VAVECI All Rights Reserved.
+            <!--&copy; 2023 VAVECI All Rights Reserved.-->
         </footer>
         <script src="main.js"></script>
 
